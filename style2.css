@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(246, 220, 235, 1) 0%, rgba(244, 152, 182, 1) 37%, rgba(249, 153, 171, 1) 100%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+.menu .navBar ul {
+    font-size: 10px;
+    list-style: none;
+}
+
+.menu .navBar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navBar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navBar ul li a:hover {
+    color: rgb(255, 0, 43);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.menu .logo img {
+   width: 200px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h2 {
+    font-size: 55px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-text h {
+    margin-bottom: 10px;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.btn-1 {
+    display: inline-block;
+    background-color: aquamarine;
+    margin-top: 5px;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.btn-1:hover {
+    background-color: blue;
+}
+
+@media(max-width: 991px) {
+    .menu .logo img {
+        padding-bottom: 90px;
+        width: 70px;
+    }
+    .menu-icono {
+        display: block;
+        width: 20px;
+    }
+
+    .menu .logo {
+        width: 30px;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navBar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(209, 148, 148);
+        display: none;
+    }
+
+    .menu .navBar ul li {
+        display: flex;
+
+    }
+
+    #menu:checked~.navBar {
+        display: initial;
+    }
+
+    header {
+        height: 60vh;
+    }
+    .portfolio {
+        padding: 30px;
+    }
+
+    .g-portfolio {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .portfolio-txt2 {
+        text-align: center;
+
+    }
+
+    .imagenes img {
+        size: 30px;
+    }
+    .map {
+        margin-top: 23px;
+        padding: 27px;
+        width:"30" ;
+        height:"25"
+      }
+      
+}
+.portfolio {
+    background-color: pink;
+    opacity: 1;
+    background-size: 80px 80px;
+    padding: 100px 0px;
+    color: black;
+    font-weight: 780;
+    font-size: 23px;
+}
+
+.g-portfolio {
+    display: flex;
+}
+
+.portfolio-txt-1 h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.portfolio-txt2 h2 {
+    text-align: right;
+}
+
+.imagenes img {
+    width: 300px;
+    margin: 0px 20px 70px 20px;
+    border-radius: 20px;
+}
+.video video{
+    width: 300px;
+    margin: 0px 20px 70px 20px;
+    border-radius: 20px;
+}
+footer {
+    background: radial-gradient(circle, rgba(255, 176, 134, 1) 0%, rgba(255, 183, 188, 1) 100%);
+    padding: 150px 0px;
+
+
+}
+
+.ft_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.enlace h3 {
+    color: antiquewhite;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace a {
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.enlace form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-2 {
+    padding: 10px 25px;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.btn-3 {
+    background-color: rgb(235, 117, 146);
+    padding: 10px 25px;
+    border: 0px;
+    color: beige;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+.map iframe{
+  border-radius: 30px;
+}

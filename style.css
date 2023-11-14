@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(246, 220, 235, 1) 0%, rgba(244, 152, 182, 1) 37%, rgba(249, 153, 171, 1) 100%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+.menu .navBar ul {
+    font-size: 10px;
+    list-style: none;
+}
+
+.menu .navBar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navBar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navBar ul li a:hover {
+    color: rgb(95, 43, 52);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.menu .logo img {
+   width: 200px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h2 {
+    font-size: 55px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-text h {
+    margin-bottom: 10px;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background: linear-gradient(0deg, rgba(153,192,193,1) 0%, rgba(245,185,210,1) 100%);
+    margin-top: 5px;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.btn-1:hover {
+    background-color: rgb(112, 112, 209);
+}
+
+.services {
+    background-color: pink;
+    padding: 100px 80px 60px 100px;
+    text-align: center;
+    color: black;
+}
+
+.services h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.txt-1 {
+    font-size: 18px;
+    padding: 0px 200px;
+    margin-bottom: 55px;
+}
+
+.group-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    padding: 35px 50px;
+    background-color: rgb(243, 184, 194);
+    box-shadow: 0px 0px 5px rgb(252, 233, 233);
+}
+
+.service img {
+    width: 130px;
+    margin-bottom: 250px;
+    margin: 0px 10px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 18px;
+}
+
+.portfolio {
+    background-color: #c8e0de;
+    opacity: 1;
+    background-image:  repeating-linear-gradient(45deg, #e6a2cd 25%, transparent 25%, transparent 75%, #e6a2cd 75%, #e6a2cd), repeating-linear-gradient(45deg, #e6a2cd 25%, #c8e0de 25%, #c8e0de 75%, #e6a2cd 75%, #e6a2cd);
+    background-position: 0 0, 40px 40px;
+    background-size: 80px 80px;
+    padding: 100px 0px;
+    color: black;
+    font-weight: 780;
+    font-size: 23px;
+}
+
+.g-portfolio {
+    display: flex;
+}
+
+.portfolio-txt-1 h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.portfolio-txt2 h2 {
+    text-align: right;
+}
+
+.imagenes img {
+    width: 300px;
+    margin: 0px 20px 70px 20px;
+    border-radius: 20px;
+}
+
+footer {
+    background: radial-gradient(circle, rgba(255, 176, 134, 1) 0%, rgba(255, 183, 188, 1) 100%);
+    padding: 150px 0px;
+
+
+}
+
+.ft_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.enlace h3 {
+    color: antiquewhite;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace a {
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.enlace form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-2 {
+    padding: 10px 25px;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.btn-3 {
+    background-color: rgb(235, 117, 146);
+    padding: 10px 25px;
+    border: 0px;
+    color: beige;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+@media(max-width: 991px) {
+    .menu .logo img {
+        padding-bottom: 90px;
+        width: 70px;
+    }
+    .menu-icono {
+        display: block;
+        width: 20px;
+    }
+
+    .menu .logo {
+        width: 30px;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navBar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(209, 148, 148);
+        display: none;
+    }
+
+    .menu .navBar ul li {
+        display: flex;
+
+    }
+
+    #menu:checked~.navBar {
+        display: initial;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    .header-text {
+        margin-top: 50px;
+        padding: 0px 25px;
+    }
+
+    .services {
+        padding: 30px;
+    }
+
+    .txt-1 {
+        padding: 0px;
+    }
+
+    .group-services {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 20px;
+
+    }
+
+    .portfolio {
+        padding: 30px;
+    }
+
+    .g-portfolio {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .portfolio-txt2 {
+        text-align: center;
+
+    }
+
+    .imagenes img {
+        size: 30px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    .ft_container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .enlace form {
+        align-items: center;
+    }
+
+}

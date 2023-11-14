@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/jpg" href="Cdona.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+    </head>
+        <div class="menu container">
+            <div class="logo">
+                <a href="#"><img src="CClogo.png"></a>
+            </div>
+            <input type="checkbox" id="menu"/>
+            <label for="menu" ><img class="menu-icono" src="menu.png"alt="">
+            </label>
+            
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Inicio</a>
+                    <li><a href="aboutus.html">Sobre Nosotros</a>
+                    <li><a href="sucursales.html">Sucursales</a>
+                    <li><a href="#">Contacto</a>
+                    <li><a href="app.html">➜ APP!</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h2>Make your own pastry</h2>
+            <h>Haz tus propios postres</h>
+           
+        </div>
+</header>
+<section class="contact">
+    <div class="container">
+        <h2>Contacta con nosotros.</h2>
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Envianos un mensaje!</h3>
+                <form id="myForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Correo">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", function (event) {
+                     
+                        event.preventDefault();
+                        var message = document.getElementsByName("message")[0].value;
+                        if (message.toLowerCase() === "hola") {
+                        
+                            window.location.href="hola.html";
+                        } else {
+                            window.alert("Su mensaje nos ha llegado!")
+                            this.submit();
+                        }
+                    });
+                </script>
+            </div>
+            <div class="contact-info">
+                <h3>Informacion de contacto</h3>
+                <p><i class="fas fa-phone"></i>+52 686 420 6969</p>
+                <p><i class="fa-mail-reply"></i>cupmaketm2023@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>Ubicacion, Mexicali</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="ft_container">
+        <div class="enlace">
+            <h3>Redes Sociales</h3>
+            <li><a href="redessocial.html"> Enlace</a></li>
+        </div>
+        <div class="enlace">
+            <h3>CodeBusters</h3>
+            <li><a href="https://drive.google.com/drive/u/0/folders/1q1lE6x1J1iTnNusYNEQeWMCFLC1GfU47"> Drive</a>
+            </li>
+        </div>
+        <div class="enlace">
+            <h3>NewsPaper</h3>
+            <form class="form" id="myForm1">
+                <input type="text" class="btn-2">
+                <input type="submit" value="enviar" class="btn-3">
+            </form>
+            <script>
+                document.getElementById("myForm1").addEventListener("submit", function (event) {
+                    var message = document.getElementsByClassName("btn-2")[0].value; // Mo
+                    alert("Correo enviado!");
+                    event.preventDefault();
+                });
+            </script>
+        </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

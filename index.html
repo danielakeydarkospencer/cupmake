@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupMake</title>
+    <link rel="icon" type="image/jpg" href="Cdona.jpg"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        </head>
+        <div class="menu container">
+            <div class="logo">
+                <a href="#"><img src="CClogo.png"></a>
+            </div>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img class="menu-icono" src="menu.png" alt="">
+            </label>
+
+            <nav class="navBar">
+                <ul>
+                    <li><a href="#">Inicio</a>
+                    <li><a href="aboutus.html">Sobre Nosotros</a>
+                    <li><a href="sucursales.html">Sucursales</a>
+                    <li><a href="contacto.html">Contacto</a>
+                    <li><a href="app.html">➜ APP!</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h2>Make your own pastry</h2>
+            <h>Haz tus propios postres</h>
+            <a href="masinfo.html" class="btn-1">Mas Informacion</a>
+        </div>
+    </header>
+    <main class="services">
+        <div class="group-services">
+            <div class="service">
+                <img src="pastel.jpg" alt="">
+                <h3>Servicio 1</h3>
+                <p> Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="service">
+                <img src="pastel1.jpg" alt="">
+                <h3>Servicio 2</h3>
+                <p> Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+            <div class="service">
+                <img src="pastel.jpg" alt="">
+                <h3>Servicio 3</h3>
+                <p> Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <section class="portfolio">
+        <div class="container">
+            <div class="g-portfolio">
+                <div class="portfolio-txt-1">
+                    <h2>Te ofrecemos los siguientes postres.</h2>
+                    <li style="color: rgb(168, 55, 92);">Pasteles</li>
+                    <li style="color: rgb(168, 55, 92);">Mini Cake</li>
+                    <li style="color: rgb(168, 55, 92);">Cupcakes</li>
+                    <li style="color: rgb(168, 55, 92);">Brownies</li>
+                    <li style="color: rgb(168, 55, 92);">Muffins</li>
+                    <li style="color: rgb(168, 55, 92);">Y mas!</li></p>
+                    <a href="masinfo.html" class="btn-1">Mas Informacion</a>
+                </div>
+                <div class="imagenes">
+                    <img src="pastel.jpg">
+                </div>
+            </div>
+            <div class="g-portfolio">
+                <div class="imagenes">
+                    <img src="pastel1.jpg">
+                </div>
+                <div class="portfolio-txt-2">
+
+                    <p>Escoge de entre varios postres tu preferido.</p>
+                </div>
+
+            </div>
+            <div class="g-portfolio">
+                <div class="portfolio-txt-1">
+
+                    <p>O crea uno propio con las opciones que te proporcionamos en la app.</p>
+                </div>
+                <div class="imagenes">
+                    <img src="image.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="ft_container">
+            <div class="enlace">
+                <h3>Redes Sociales</h3>
+                <li><a href="redessocial.html"> Enlace</a></li>
+            </div>
+            <div class="enlace">
+                <h3>CodeBusters</h3>
+                <li><a href="https://drive.google.com/drive/u/0/folders/1q1lE6x1J1iTnNusYNEQeWMCFLC1GfU47"> Drive</a>
+                </li>
+            </div>
+            <div class="enlace">
+                <h3>NewsPaper</h3>
+                <form class="form" id="myForm1">
+                    <input type="text" class="btn-2">
+                    <input type="submit" value="enviar" class="btn-3">
+                </form>
+                <script>
+                    document.getElementById("myForm1").addEventListener("submit", function (event) {
+                        var message = document.getElementsByClassName("btn-2")[0].value; // Mo
+                        alert("Correo enviado!");
+                        event.preventDefault();
+                    });
+                </script>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

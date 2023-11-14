@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Ust</title>
+    <link rel="icon" type="image/jpg" href="Cdona.jpg" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        </head>
+        <div class="menu container">
+            <div class="logo">
+                <a href="#"><img src="CClogo.png"></a>
+            </div>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img class="menu-icono" src="menu.png" alt="">
+            </label>
+
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Inicio</a>
+                    <li><a href="#">Sobre Nosotros</a>
+                    <li><a href="sucursales.html">Sucursales</a>
+                    <li><a href="contacto.html">Contacto</a>
+                    <li><a href="app.html">➜ APP!</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h2>Make your own pastry</h2>
+            <h>Haz tus propios postres</h>
+        </div>
+    </header>
+    <section class="about">
+        <div class="main">
+            <img src="1.png">
+            <div class="about-text">
+                <h1>
+                    Sobre Nosotros
+                </h1>
+                <p>Como negocio "Cupmake™" nos centramos en como en la repostería pudiese estar mas cerca de ti; como a
+                    unos solos clicks de distancia. Tenemos como meta proporcionarte aquellos dulces postres, ya sea
+                    hasta la puerta de su casa o en nuestro establecimiento. Tambien estar siempre ahi para usted
+                    siempre que necesite la cereza en el pastel en sus fiestas y/o eventos</p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="ft_container">
+            <div class="enlace">
+                <h3>Redes Sociales</h3>
+                <li><a href="redessocial.html"> Enlace</a></li>
+            </div>
+            <div class="enlace">
+                <h3>CodeBusters</h3>
+                <li><a href="https://drive.google.com/drive/u/0/folders/1q1lE6x1J1iTnNusYNEQeWMCFLC1GfU47"> Drive</a>
+                </li>
+            </div>
+            <div class="enlace">
+                <h3>NewsPaper</h3>
+                <form class="form" id="myForm1">
+                    <input type="text" class="btn-2">
+                    <input type="submit" value="enviar" class="btn-3">
+                </form>
+                <script>
+                    document.getElementById("myForm1").addEventListener("submit", function (event) {
+                        var message = document.getElementsByClassName("btn-2")[0].value; // Mo
+                        alert("Correo enviado!");
+                        event.preventDefault();
+                    });
+                </script>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

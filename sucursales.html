@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales</title>
+    <link rel="icon" type="image/jpg" href="Cdona.jpg" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        </head>
+        <div class="menu container">
+            <div class="logo">
+                <a href="#"><img src="CClogo.png"></a>
+            </div>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img class="menu-icono" src="menu.png" alt="">
+            </label>
+
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Inicio</a>
+                    <li><a href="aboutus.html">Sobre Nosotros</a>
+                    <li><a href="#">Sucursales</a>
+                    <li><a href="contacto.html">Contacto</a>
+                    <li><a href="app.html">➜ APP!</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h2>Make your own pastry</h2>
+            <h>Haz tus propios postres</h>
+
+        </div>
+    </header>
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <div class="g-portfolio">
+                    <div class="portfolio-txt-1">
+                        <h2>Sucursales</h2>
+                        <p>Actualmente tenemos una sucursal en Mexicali ubicada en Los Pinos.</p>
+                        
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.3825084134182!2d-115.44367162517895!3d32.64926379050533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d7705b2c0cc00f%3A0x5a6cbfcfea24f593!2sCECYTEBC%20PLANTEL%20LOS%20PINOS!5e0!3m2!1ses!2smx!4v1699821618008!5m2!1ses!2smx"
+                            width="600" height="450" style="border:5;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="ft_container">
+            <div class="enlace">
+                <h3>Redes Sociales</h3>
+                <li><a href="redessocial.html"> Enlace</a></li>
+            </div>
+            <div class="enlace">
+                <h3>CodeBusters</h3>
+                <li><a href="https://drive.google.com/drive/u/0/folders/1q1lE6x1J1iTnNusYNEQeWMCFLC1GfU47"> Drive</a>
+                </li>
+            </div>
+            <div class="enlace">
+                <h3>NewsPaper</h3>
+                <form class="form" id="myForm1">
+                    <input type="text" class="btn-2">
+                    <input type="submit" value="enviar" class="btn-3">
+                </form>
+                <script>
+                    document.getElementById("myForm1").addEventListener("submit", function (event) {
+                        var message = document.getElementsByClassName("btn-2")[0].value; // Mo
+                        alert("Correo enviado!");
+                        event.preventDefault();
+                    });
+                </script>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

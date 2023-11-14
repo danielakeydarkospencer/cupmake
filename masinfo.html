@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas Informacion</title>
+    <link rel="icon" type="image/jpg" href="Cdona.jpg" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        </head>
+        <div class="menu container">
+            <div class="logo">
+                <a href="#"><img src="CClogo.png"></a>
+            </div>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img class="menu-icono" src="menu.png" alt="">
+            </label>
+
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Inicio</a>
+                    <li><a href="aboutus.html">Sobre Nosotros</a>
+                    <li><a href="sucursales.html">Sucursales</a>
+                    <li><a href="contacto.html">Contacto</a>
+                    <li><a href="app.html">➜ APP!</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h2>Make your own pastry</h2>
+            <h>Haz tus propios postres</h>
+
+        </div>
+    </header>
+    <section class="portfolio">
+        <div class="container">
+            <div class="g-portfolio">
+                <div class="portfolio-txt-1">
+                    <h2>Servicios de Cupmake</h2>
+                    <p>Contamos con un servicio de entrega a domicilio. Le proporcionamos una aplicacion donde usted
+                        como usuario ouede personalizar su postre preferido con las varias opciones que ofrezcamos en el
+                        momento.</p>
+                </div>
+                <div class="imagenes">
+                    <img src="image76.png">
+                </div>
+            </div>
+            <div class="g-portfolio">
+                <div class="imagenes">
+                    <img src="">
+                </div>
+                <div class="portfolio-txt-2">
+                    <h2>Lista de postres disponibles</h2>
+                   <ul>
+                    <li style="color: rgb(168, 55, 92);">Pasteles</li>
+                    <li style="color: rgb(168, 55, 92);">Mini Cake</li>
+                    <li style="color: rgb(168, 55, 92);">Cupcakes</li>
+                    <li style="color: rgb(168, 55, 92);">Brownies</li>
+                    <li style="color: rgb(168, 55, 92);">Muffins</li>
+                    <li style="color: rgb(168, 55, 92);">Cakepops</li>
+                    <li style="color: rgb(168, 55, 92);">Pays y Carlotas</li>
+                    <li style="color: rgb(168, 55, 92);">Macarrones</li>
+                    <li style="color: rgb(168, 55, 92);">Galletas de diferente tipo</li>
+                   </ul>
+                </div>
+
+            </div>
+            <div class="g-portfolio">
+                <div class="portfolio-txt-1">
+                    <h2>Video Promocional</h2>
+                </div>
+                <div class="video">
+                    <video src="video promo.mp4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="ft_container">
+            <div class="enlace">
+                <h3>Redes Sociales</h3>
+                <li><a href="redessocial.html"> Enlace</a></li>
+            </div>
+            <div class="enlace">
+                <h3>CodeBusters</h3>
+                <li><a href="https://drive.google.com/drive/u/0/folders/1q1lE6x1J1iTnNusYNEQeWMCFLC1GfU47"> Drive</a>
+                </li>
+            </div>
+            <div class="enlace">
+                <h3>NewsPaper</h3>
+                <form class="form" id="myForm1">
+                    <input type="text" class="btn-2">
+                    <input type="submit" value="enviar" class="btn-3">
+                </form>
+                <script>
+                    document.getElementById("myForm1").addEventListener("submit", function (event) {
+                        var message = document.getElementsByClassName("btn-2")[0].value; // Mo
+                        alert("Correo enviado!");
+                        event.preventDefault();
+                    });
+                </script>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
